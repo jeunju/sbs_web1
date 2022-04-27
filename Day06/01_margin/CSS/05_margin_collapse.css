@@ -1,0 +1,20 @@
+
+.container {
+    position: relative;
+    width: 1200px;
+    height: auto;
+    border: 5px dashed orange;
+    margin: 100px auto;
+    text-align: center;
+}
+
+section {
+    margin: 100px auto;
+    width: 900px;
+    height: 200px;
+    border: 3px solid gray;
+}
+
+.solve-1 {padding: 50px 0; }
+.solve-2 {border-top: 1px solid transparent;} /* 투명한 선으로 마진이 만나지않게 함. */
+.solve-3 { margin-top: 0; margin-bottom: 200px;}/* 충돌 방지를 위해 한 방향으로만 마진 설정함. */

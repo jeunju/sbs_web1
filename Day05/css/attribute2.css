@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+/* TODO: 여기에 작성해보세요 */
+form label {
+    display: inline-block;
+    width: 100px;
+}
+
+input[type^='t'],
+textarea {
+    border: 1px solid #ccc;
+    padding: 8px;
+    border-radius: 5px;
+    width: 300px;
+}
+
+textarea {
+    /*텍스트 입력 창 크기 변경 여부 지정*/
+    resize: none;  /*변경 안함.*/
+}
+
+label[for^='co'] {
+    position: relative;
+    top: -90px; /*위에서 부터 떨어지는 위치를 지정 -로 지정 시 올라가는 것 -> '내용'을 입력박스 중간에 위치하게 한 것*/
+}
+
+input[type^='b'] { /*버튼을 선택*/
+    padding: 10px 20px;
+    border:1px solid #bc3636;
+    background-color: #bc3636;
+    color: white;
+    border-radius: 5px; /*버튼에 곡률을 줌*/
+}
+/* :hover - 마우스를 올렸을 때의 가상 선택자*/
+input[type^='b']:hover {
+    border: 1px solid cornflowerblue;
+    background-color: lightskyblue;
+    color: black;
+    cursor: pointer;
+}
+
+/* :active - 마우스를 눌렀을 때 스타일 지정*/
+input[type^='b']:active {
+    border: 1px solid #f3a1a1;
+    background-color: #c77a7a;
+}
